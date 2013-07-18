@@ -2,50 +2,88 @@
 <html>
 <head>
     <title>Html form</title>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.css'>
+
 </head>
 
 <body>
+    <div class='container'>
 
-<h1>An example form</h1>
+        <h1>An example form</h1>
 
-<form>
+        <form>
 
-<legend>Text input</legend>
-<label>Name</label>
-<input type="text" name='name'>
-
-
-<label>Email</label>
-<input type="text" name='email'>
+            <legend>Text fields</legend>
+            <label>Name</label>
+            <input type="text" name='user-name'>
 
 
-<legend>Passwords</legend>
+            <label>Email</label>
+            <input type="text" name='user-email'>
 
-<label>Password</label>
-<input type="text" name='email'>
+            <legend>Text area</legend>
+            <label>Please leave us some comments:</label>
+            <textarea name='comments' rows="3"></textarea>
 
+            <legend>Passwords</legend>
 
-<legend>Multiple choice</legend>
-
-<label>Radio buttons</label>
-<input type="radio" name='email'>
-
-
-<legend>Check boxes</legend>
-
-<label>Password</label>
-<input type="text" name='email'>
+            <label>Password</label>
+            <input type="password" name='user-password'>
 
 
-<select name='fruits'>
-    <option value='banana'>Hello</option>
-</select>
+            <legend>Radio buttons</legend>
 
-<input type="submit">
+            <!-- radio buttons -->
+            <label class='radio'>
+            <input type='radio' name='laptop-type' value='windows'>
+            Windows
+            </label>
+            <label class='radio'>
+            <input type='radio' name='laptop-type' value='mac'>
+            Mac</label>
+            <label class='radio'>
+            <input type='radio' name='laptop-type' value='linux'>
+            Linux</label>
 
-</form>
+            <legend>Check boxes</legend>
+            <!-- checkboxes -->
+            <label class='checkbox'>
+            <input type='checkbox' name='languages-known' value='html'>
+            HTML</label>
+            <label class='checkbox'>
+            <input type='checkbox' name='languages-known' value='css'>
+            CSS</label>
+            <label class='checkbox'>
+            <input type='checkbox' name='languages-known' value='ruby'>
+            ruby</label>
+            <label class='checkbox'>
+            <input type='checkbox' name='languages-known' value='javascript'>
+            javascript</label>
 
 
+            <legend>Select boxes</legend>
 
+            <select name='fruits'>
+                <option value='banana'>banana</option>
+                <option value='apple'>apple</option>
+                <option value='pear'>pear</option>
+                <option value='tomato'>tomato</option>
+            </select>
+
+            <legend>Other options</legend>
+
+            <label>Colour</label>
+            <input type='color'>
+            <label>Date</label>
+            <input type='date'>
+            <label>Time</label>
+            <input type='time'>
+
+            <input type="submit">
+
+        </form>
+
+
+    </div>
 </body>
 </html>
