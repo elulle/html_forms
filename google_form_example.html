@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html form</title>
+</head>
+
+<h1>Submitting to a Google form</h1>
+
+<h3>Without redirection</h3>
+
+<body>
+<form action="https://docs.google.com/forms/d/16faBBpyeqEBbHDyhM2K6s0i6UXBckz9vOQGwKrJKyN0/formResponse" method="POST">
+  <input type="text" name="entry.1087713693">
+  <input type="text" name="entry.1239878056">
+  <input type="submit" name="submit" value="Submit">
+</form>
+
+
+<h3>With redirection</h3>
+
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='thanks.html';}"></iframe>
+
+<form action="https://docs.google.com/forms/d/16faBBpyeqEBbHDyhM2K6s0i6UXBckz9vOQGwKrJKyN0/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+  <input type="text" name="entry.1087713693">
+  <input type="text" name="entry.1239878056">
+  <input type="submit" name="submit" value="Submit">
+</form>
+
+</body>
+</html>
